@@ -1,6 +1,6 @@
 require 'find_address'
 
-Admin::OrdersController.class_eval do
+Spree::Admin::OrdersController.class_eval do
   before_filter :fix_addresses, :only => [:update]
   after_filter :change_user_email , :only => [:update]
   

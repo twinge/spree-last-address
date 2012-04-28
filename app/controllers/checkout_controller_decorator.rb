@@ -1,6 +1,6 @@
 require 'find_address'
 
-CheckoutController.class_eval do
+Spree::CheckoutController.class_eval do
 
   private
 
